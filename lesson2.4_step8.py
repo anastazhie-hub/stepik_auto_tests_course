@@ -12,7 +12,7 @@ try:
     browser = webdriver.Chrome()
     browser.get("https://suninjuly.github.io/explicit_wait2.html")
 
-    # говорим Selenium проверять в течение 5 секунд, пока цена не станет $100
+    # говорим Selenium проверять в течение 12 секунд, пока цена не станет $100
     WebDriverWait(browser, 12).until(
             EC.text_to_be_present_in_element((By.ID, "price"), "$100"))
 
